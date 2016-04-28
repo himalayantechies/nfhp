@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<script type="text/javascript" src="../../../js/libs/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="../../../js/libs/jquery-css-transform.js"></script>
+	<script type="text/javascript" src="../../../js/libs/jquery-animate-css-rotate-scale.js"></script>
+    <script type="text/javascript" src="../../../js/libs/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../../../js/libs/jquery.getUrlParam.js"></script>
+	<style type="text/css">
+		@font-face {
+		  	font-family: MTCORSVA;
+			src: url('../../fonts/MTCORSVA.TTF');
+		}
+		body{
+			font-family: MTCORSVA;
+			font-size:33px;
+			font-weight: bold;
+			font-style: italic;
+		}
+		#certificate{
+			position:relative;
+		}
+		#certificate img{
+			z-index:0;
+		}
+		#texts {position:absolute; top:396px; left:38px; z-index:1; width: 543px;}
+		#texts .name{float:left;}
+		#date{font-size:23px;position:absolute; top:645px; left:329px; z-index:1; width: 153px;}
+	</style>
+	<script type="text/javascript">
+		var cookieList = function(cookieName){
+			var cookie = $.cookie(cookieName);
+			var items = cookie ? cookie.split(/,/) : new Array();
+			return {
+				"items": function(){
+					return items;
+				}
+			}
+		}
+		function currentDate(){
+				today=new Date(); // Initialize Date in raw form
+				date = today.getDate(); // Get the numerical date
+				year = today.getFullYear(); // Get the year
+				day = today.getDay(); // Get the day in number form 
+				month=today.getMonth()+1; // Get the month
+			
+				// Make day number value correspond to actual day name
+				var dayName=new Array(7)
+				dayName[0]="Sunday";
+				dayName[1]="Monday";
+				dayName[2]="Tuesday";
+				dayName[3]="Wednesday";
+				dayName[4]="Thursday";
+				dayName[5]="Friday";
+				dayName[6]="Saturday";
+				
+				// Add suffix to date (1st, 2nd, 4th, etc.)
+				if (date==1) suffix=("st");
+				else if (date==2) suffix=("nd");
+				else if (date==3) suffix=("rd");
+				else if (date==21) suffix=("st");
+				else if (date==22) suffix=("nd");
+				else if (date==23) suffix=("rd");
+				else if (date==31) suffix=("st");
+				else suffix=("th");
+				
+				// Make month number correspond to month name
+				if (month==1) monthName=("Jan");
+				else if (month==2) monthName=("Feb");
+				else if (month==3) monthName=("Mar");
+				else if (month==4) monthName=("Apr");
+				else if (month==5) monthName=("May");
+				else if (month==6) monthName=("Jun");
+				else if (month==7) monthName=("Jul");
+				else if (month==8) monthName=("Aug");
+				else if (month==9) monthName=("Sep");
+				else if (month==10) monthName=("Oct");
+				else if (month==11) monthName=("Nov");
+				else monthName=("Dec");
+				
+				//dateFinal = dayName[day] + ", " + monthName + " " + date + suffix + ", " + year;
+				dateFinal = monthName + " " + date + suffix + ", " + year;
+				return dateFinal;
+			}
+		$(function(){
+			var nfhpNames = new cookieList('nfhpNames');
+			var  names = nfhpNames.items();
+			nfhpId = $.cookie('nfhpId');
+			var nfhpPositions = new cookieList('nfhpPositions');
+			var  positions = nfhpPositions.items();
+			var nfhpCitz = new cookieList('nfhpCitizenNums');
+			var  citz = nfhpCitz.items();
+			var userId = $.cookie('nfhpId');
+
+			$('#texts').html('<div class="name">'+names[nfhpId-1]+',&nbsp;</div>');
+			$('#texts').append('<div class="name">'+positions[nfhpId-1]+'</div>');
+			$("#date").html(currentDate); 
+			$('#texts').animate({rotate: "-90deg"}, 0);
+			$('#date').animate({rotate: "-90deg"}, 0);
+			
+			window.print();
+			window.close();
+			
+		});
+		
+	</script>
+  <head>
+  <body>
+  	<div id="certificate">
+  		<img src="certificate.png">
+  	</div>
+	<div id="texts"></div>
+	<div id="date"></div>
+  </body>
+</html>

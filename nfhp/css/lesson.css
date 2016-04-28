@@ -1,0 +1,750 @@
+/*LESSON CSS*/
+#trayHover{
+	position:absolute;
+	top: 548px;
+	left:0px;
+	width: 57px;
+	height: 57px;
+	cursor:pointer;
+	z-index:5;
+}
+#tableOverLay{
+	display:none;
+	z-index:5;
+	position:absolute;
+	top:0;
+	left:0;
+	width: 1024px;
+	height: 768px;
+	background:#ffffff;
+	opacity:0.5;
+}
+/* Drag and Drop Global Implementation */
+#dragArea{
+	position:absolute;
+	top: 262px;
+	left: -20px;
+	width: 218px;
+	height: 308px;
+}
+#dragArea .dragObject{
+	z-index:2;
+}
+#dropArea{
+	position:absolute;
+	top:0;
+	left: 0;
+}
+
+.exercises {
+	position:absolute;
+	top: 22px;
+	left: 0px;
+}
+#lesson1 h2.sub-heading,#lesson3 h2.sub-heading,#lesson6 h2.sub-heading{
+	margin-bottom: -19px;
+}
+p.image{
+	width:568px;
+	text-align:left;
+	}
+
+ul.large{
+	width:675px;
+}
+
+#image_load{
+	display:none;
+	position:absolute;
+	top:204px;
+	left:69px;
+	width:760px;
+	height:480px;
+	z-index:6;
+}
+#table_load{
+	display:none;
+	position:absolute;
+	top:204px;
+	left:69px;
+	width:900px;
+	height:480px;
+	z-index:6;
+}
+
+
+
+/*Table Zoom */
+#table-zoom{
+	position:absolute;
+	overflow:hidden;
+	display:none;
+	top:0px;
+	left:0px;
+}
+.table-left-right{
+	width : 1024px;
+	height: 540px;
+	left:0px;
+	top:130px;
+}
+.table-up-down{
+	width : 865px;
+	height: 670px;
+	left:42px;
+	top: 98px;
+}
+.arrow-up{
+	width: 32px; height: 32px;
+	background: url(../images/arrow-up.png);
+	cursor:pointer;
+} 
+.arrow-up:hover{
+	background: url(../images/arrow-up-mo.png);
+}
+.arrow-down{
+	width: 32px;
+	height: 32px;
+	background: url(../images/arrow-down.png);
+	cursor:pointer;
+}
+.arrow-down:hover{
+	background: url(../images/arrow-down-mo.png);
+} 
+#table-navigation-up-down{
+	position:absolute;
+	right:23px;
+	top: 170px;
+	width: 61px;
+}   
+#table-navigation-up-down #table-up{
+	position:relative;
+	float:left;
+	
+}    
+#table-navigation-up-down #table-down{
+	margin-top: 20px;
+	position:relative;
+	float:left;
+
+}
+#table-navigation-up-down #table-print-right{
+	position:relative;
+	margin-left:-19px;
+	margin-top: 33px;
+	float:left;
+}
+
+
+#table-navigation-left-right{
+	position:absolute;
+	left:140px;
+	bottom: 20px;
+	width: 350px;
+}   
+#table-navigation-left-right #table-left{
+	position:relative;
+	float:left;
+}    
+#table-navigation-left-right #table-right{
+	margin-left: 25px;
+	position:relative;
+	float:left;
+
+}
+#table-navigation-left-right #table-print-down{
+	position:relative;
+	margin-left:40px;
+	margin-top : -3px;
+	float:left;
+}
+.table{
+	width: 641px;
+}
+
+/*image*/
+.lessonImage{
+	position:relative;
+	margin-left: 66px;
+}
+
+/*LESSON CSS*/
+/* Zoom */
+#paragraphZoom{
+	display:none;
+	position:absolute;
+	top: 203px;
+	left: 0px;
+	z-index:7;
+	width : 1024px;
+	height : 552px;
+	background:#EEF2F6;
+	box-shadow: 5px 2px 10px #565656;
+}
+
+p.image,div.image{
+	width:568px;
+	text-align:left;
+}
+ul.large{
+	width:675px;
+}
+.lessonImage{
+ position:relative;
+ margin-top :0px;
+ margin-left: 39px;
+}
+ul.en{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+ul#top{
+	margin-top:	16px;
+	margin-bottom: 0px;
+}
+
+div.left-list-tbl{
+	width : 20px;
+	float:left;
+}
+div.right-list-tbl{
+	width : 20px;
+	float:left;
+	width: 560px;
+}
+.zoomedPara div.left-list-tbl{
+	width: 50px;
+}
+.zoomedPara div.right-list-tbl{
+	width: 880px;
+	margin-left: 41px;
+    margin-top: -35px;
+}
+p.zoomedPara span.en{
+	font-family:Tahoma;
+	font-size: 23px;
+}
+
+p.zoomedPara ul.en{
+		font-size:35px;
+		font-family:HisiS;
+		margin:0 0 8px;
+}
+p.zoomedPara ul.large{
+		width:980px;
+}
+p.zoomedPara ul.en li{
+font-size:30px;
+line-height: 33px;
+ width: 919px;
+}
+p.zoomedPara h2.sub-heading{
+	font-family: HisiS;
+	font-size: 31px;
+	padding-bottom:20px;
+	margin:0px;
+	width: 966px;
+}
+/*p.zoomedPara h2.sub-heading {
+    font-family: HisiS;
+    font-size: 37px;
+    margin: 0;
+    padding-bottom: 8px;
+    width: 966px;
+}*/
+
+p.zoomedPara ul.en span.ne{
+	font-family:HisiS;
+	font-size:32px;
+	margin-bottom:10px;
+	margin:0;
+}
+p.zoomedPara p.ne{
+	font-family:HisiS;
+	font-size:32px;
+	width:981px; /* */
+	margin:5px 0 20px;
+}
+p.zoomedPara p.lesson1-p4 {
+		width:960px;
+}
+
+p.zoomedPara ul.lesson3-p5 {
+		width:960px;
+		font-size:30px;
+	}
+#paragraphZoom p.zoomedPara{
+	font-family : HisiS;
+	font-size : 32px;
+	position:absolute;
+	top: 0px;
+	left: 20px;
+	width: 980px; /* 948*/
+}
+p.ne_note{
+	font-family : HisiS;
+	font-size : 18px; 
+	margin-left: 70px;
+}
+p.ne_note_table{
+	font-family : HisiS;
+	font-size : 18px; 
+	margin-left: 70px;
+	margin-top:0px;
+	width:500px;
+}
+p.ne_note_table{
+	font-family : HisiS;
+	font-size : 18px; 
+	padding-top:0px;
+	margin-left: 101px;
+	margin-top:50px;
+}
+#img_tbl_text{
+	width:500px;
+	float:left;
+	vertical-align:top;
+	font-size:18px;
+	margin-top:-30px;
+	text-align:justify;
+	margin-left:-35px;
+}
+p.ne_note_tbl{
+	font-family : HisiS;
+	font-size : 14px; 
+	margin-left: 11px;
+	margin-top:0px;
+}
+.en_li{
+		font-family:Tahoma;
+		margin-left:140px;
+		position:absolute;
+		top:245px;
+}
+.right-list {
+		float: right;
+		margin-top: 0px;
+		width: 828px; /*787*/
+}
+.left-list{
+		width:4px;
+		margin-bottom:4px;
+		float:left;
+	}
+
+.list{
+	margin-top:-15px;
+	margin-bottom:20px;
+	margin-left: 40px;
+	width:852px; /* 811*/
+	float:left;
+		font-family : HisiS;
+	font-size : 21px; 
+}
+
+
+#paragraphZoom p.zoomedPara .list{
+	font-size : 32px; 
+	width: 929px;
+}
+#paragraphZoom p.zoomedPara .list .right-list{
+	width: 881px;
+}
+
+.lessonAlignImage{
+	margin-left: 40px;
+}
+
+div.zoom div.list p.ne{
+	width : 724px;
+	margin-top: 3px;
+	margin-bottom: 0px;
+}
+p.zoomedPara div.list p.ne {
+    font-family: HisiS;
+    font-size: 32px;
+    margin: 5px 0 20px;
+    width: 858px;
+}
+
+/* Lesson 1 */
+#lesson1 p.zoomedPara p.lesson1-p4 {
+  width:960px;
+}
+/* Lesson 2 */
+#lesson2 p.ne_img{
+	font-family : HisiS;
+	font-size : 18px; 
+	margin-left: 50px;
+}
+
+#lesson2 span.ne_img{
+	font-family : HisiS;
+	font-size : 18px; 
+	margin-left: 70px;
+}
+#lesson2 #supply-cycle-texts{
+	display:none;
+}
+#lesson2 #supply-text-area{
+	position:absolute;
+	right: -30px;
+	top : 66px;
+	width : 253px;
+	height : 429px;
+	background: #fff;
+	box-shadow: 4px 6px 4px #565656;
+}
+#lesson2 #supply-cycle{
+	position:absolute;
+	left: 35px;
+	top : 94px;
+	width : 573px;
+	height : 459px;
+	background: url(../images/lessons/lesson2/page7/supply-cycle.png);
+}
+#lesson2 #supply-cycle #text-1{
+	position:absolute;
+	top: 10px;
+	left: -2px;
+}
+#lesson2 #supply-cycle #text-2{
+	position:absolute;
+	bottom: 10px;
+	right: 12px;
+}
+#lesson2 #supply-cycle .text span{
+	font-family:Aakriti;
+	font-weight: bold;
+}
+#lesson2 .sup-heading{
+	font-family:Aakriti;
+	font-size : 26px;
+	color:#6686D8;
+}
+#lesson2 .sup-text{
+	font-family:Hisis;
+	font-size : 21px;
+}
+#lesson2 #sup-heading-area{
+	margin-top: 22px;
+	margin-left : 22px;
+	position:relative;
+	width: 212px;
+}
+#lesson2 #sup-text-area{
+	margin-top: 10px;
+	margin-left : 20px;
+	position:relative;
+	width: 217px;
+	height: 392px;
+	padding-right:10px;
+}
+/*Lesson 3*/
+#lesson3 #lesson3-page6-caption{
+	width: 704px;
+}
+#lesson3 p.zoomedPara ul.lesson3-p6 {
+  width:960px;
+  font-size:28px;
+}
+#lesson3 ul.lesson3-p6 {
+	margin-top:0;
+	width:705px;
+}
+#lesson3 p.zoomedPara ul.en span.ne{
+ 	font-size:29px;
+ } 
+#lesson3 div#symbolZoomArea{
+	width: 168px;
+	position:absolute;
+	height: 520px;
+	top: 36px;
+	right : 147px;
+}
+#lesson3 div.symbolZoom{
+	width: 168px;
+	height : 164px;
+	position:absolute;
+	top: 0px;
+}
+#lesson3 div#symbolArea{
+	width: 408px;
+	height : 496px;
+	position:absolute;
+	top: 77px;
+	left : 90px;
+	background:url(../images/lessons/lesson3/page10/symbolArea.png);
+}
+#lesson3 div#symbolArea .symbols{
+	position:absolute;
+	top : 0px;
+	right : 2px;
+	width: 50px;
+	height : 50px;
+}
+.chainImage{
+	position:absolute;
+	top: 105px;
+	left : 6px;
+}
+ul.en {
+	margin-top: 18px;
+}
+#lesson3 #exercise4 p.ne{
+	width: 738px;
+}
+
+/*Lesson 4 */
+#lesson4 .l-large{
+width: 757px;	
+}
+
+#lesson4 #exercise1 p{
+	width: 548px;
+}
+#lesson4 #exercise1 p span.en{
+	font-size:21px;
+}
+#lesson4 #exercise1 div.options{
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	left: 670px;
+}
+#lesson4 #exercise1 div.options .button-bg{
+	position:relative;
+	margin-left:20px;
+	width:76px;
+	height:49px;
+	background : url(../images/lessons/lesson4/exercise1/yes-no-bg.png);
+	float:left;
+}
+#lesson4 #exercise1 div.options .right-text{
+	position:relative;
+	margin: 8px 0 0 10px;
+	width:46px;
+	height:28px;
+	background : url(../images/lessons/lesson4/exercise1/right-text.png);
+}
+#lesson4 #exercise1 div.options .right-text:hover{
+	background : url(../images/lessons/lesson4/exercise1/right-text-mouseover.png);
+}
+#lesson4 #exercise1 div.options .wrong-text{
+	margin: 12px 0 0 6px;
+	position:relative;
+	width:61px;
+	height:19px;
+	background : url(../images/lessons/lesson4/exercise1/wrong-text.png);
+}
+#lesson4 #exercise1 div.options .wrong-text:hover{
+	background : url(../images/lessons/lesson4/exercise1/wrong-text-mouseover.png);
+}
+
+#lesson4 #exercise1 div.options .noHoverButton1{
+	position:relative;
+	margin: 8px 0 0 10px;
+	width:46px;
+	height:28px;
+	background : url(../images/lessons/lesson4/exercise1/right-text.png);
+}
+#lesson4 #exercise1 div.options .noHoverButton2{
+	margin: 12px 0 0 6px;
+	position:relative;
+	width:61px;
+	height:19px;
+	background : url(../images/lessons/lesson4/exercise1/wrong-text.png);
+}
+#lesson4 #exercise1 div#option1{
+	top: 200px;
+}
+#lesson4 #exercise1 div#option2{
+	top: 380px;
+}
+#lesson4 #exercise2 #dropArea .neTexts{
+	position:absolute;
+	top:230px;
+	font-family:Aakriti;
+	font-size:28px;
+	width: 145px;
+}
+#lesson4 #exercise2 #dropArea #text-1{ left:23px; }
+#lesson4 #exercise2 #dropArea #text-2{ left:230px;}
+#lesson4 #exercise2 #dropArea #text-3{ left:440px;}
+#lesson4 #exercise2 #dropArea #text-4{ left:654px;}
+
+/*Lesson 5 */
+#lesson5 #exercise3 label{
+	width: 211px;
+}
+#lesson5 div.zoom  p.ne{
+margin-left : 39px;
+}
+#lesson5 #page12_slides{
+	margin-top:10px;
+}
+#lesson5 .list{
+margin-top:17px;
+margin-bottom:-13px;
+}
+#lesson5 .list2 .right-list {
+	width: 852px;
+	}
+#lesson5 .org-list{
+	margin-top: -15px;
+	margin-bottom:20px;
+}
+
+#lesson5 p.ne_txt{
+	font-family : HisiS;
+	font-size : 21px; 
+	margin-left: 25px;
+	width:800px;
+}
+#lesson5 p.lesson5-p11{
+	width:656px;
+	font-size:21px;
+	margin-left:70px;
+}
+#lesson5 p#push-pull-text{
+	margin-left: 72px;
+}
+#lesson5 div.right-list ul.en{
+	margin-left:-40px;
+}
+#lesson5 div.right-list p.ne{
+	margin-left:0px;
+}
+#lesson5 div.list2 {
+	font-size : 23px; 
+	font-weight: bold;
+	font-family : HisiS;
+	margin-left:37px;
+	margin-right: -23px;
+	margin-top:10px;
+}
+#lesson5 div.list2 p.ne{
+	clear:both;
+	margin-left: 20px;
+	font-weight:normal;
+}
+p.zoomedPara div.list2{
+	font-weight:bold;
+	margin-left:-5px;
+}
+
+p.zoomedPara div.list2 div.right-list{
+	float: none; font-size : 32px; margin-top:-43px; margin-left:25px; width: 951px;
+}
+p.zoomedPara div.list2 div.left-list{
+	float: none; font-size : 32px;
+}
+p.zoomedPara div.list2 p.ne{
+	font-weight:normal;
+	margin-left:24px;
+}
+#lesson5 #exercise5 #dragLimit{
+	position: absolute;
+  	height: 166px;
+    right: -109px;
+    top: 78px;
+    width: 273px;
+}
+#lesson5 #exercise6 #dragLimit{
+    position: absolute;
+    height: 155px;
+    right: -138px;
+    top: 84px;
+    width: 237px;
+}
+#lesson5 #exercise7 #dragLimit{
+	height: 237px;
+    position: absolute;
+    right: -180px;
+    top: 324px;
+    width: 357px;
+}
+#lesson5 #exercise8 #dragLimit{
+ 	height: 241px;
+    position: absolute;
+    right: 23px;
+    top: 322px;
+    width: 416px;
+}
+ul.tightMargin{
+	margin-top:-17px;
+}
+p.zoomedPara ul.tightMargin {
+	margin-top:-17px;
+}
+/*Lesson 6 */
+#lesson6 p.image,div.image{
+	width:568px;
+	text-align:left;
+	margin-left:37px;
+	margin-top:0px; /*20px*/
+}
+#lesson6 p.ne_note_tbl{
+	font-family : HisiS;
+	font-size : 21px; 
+	margin-left: 40px;
+	margin-top:0px;
+	width:500px;
+}
+#lesson6 ul.ne {
+	list-style: circle;
+}
+#lesson6 #l6-p20-1{
+	position: absolute;
+	right: -100px;
+	top: 75px;
+}
+#lesson6 #l6-p20{
+	position: absolute; right: -100px; top: 275px;
+}
+#lesson6 div.caption_image{
+	text-align:center;
+	background-color : #A7B7E0;
+	height:60px;
+}
+#lesson6 h2.sub-heading{
+	margin-left : 38px;
+	padding-bottom:20px;
+}
+#lesson6 div.list{
+	margin-top:0px;   /*-20 */
+	/*margin-bottom:40px;*/	
+}
+#lesson6 div.org-list{
+	margin-top: -15px;
+	margin-bottom:20px;
+}
+/*Lesson7*/
+#lesson7 div#text{
+	width:900px; position:absolute; left:0px;
+}
+#lesson7 div#text1{
+	float:left; width:450px; text-align:left;
+}
+#lesson7 div#text2{
+	float:left; width:450px; text-align:left;
+}
+#lesson7 .image_full{
+	margin-right:300px;
+	margin-top:30px;
+}
+#lesson7 #page6-caption{
+	width : 671px;
+}
+
+#margin0,.margin0{
+	margin:0;
+}
+#lesson1 .objective h2.sub-heading,#lesson3 .objective h2.sub-heading,#lesson6 .objective h2.sub-heading,.objective h2.sub-heading{
+	margin-bottom:29px;	
+}
+
+
+h2.tutorial-heading span.en{
+	font-size:22px;
+}

@@ -1,0 +1,10 @@
+{
+    "build_id": "20110525212951", 
+    "vendor": "Webian", 
+    "name": "Webian Shell", 
+    "resizable": false, 
+    "developer_email": "ben at tola.me.uk", 
+    "module_dirs": [], 
+    "version": "0.1", 
+    "menubar": false
+}
